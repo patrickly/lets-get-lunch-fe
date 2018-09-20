@@ -10,7 +10,13 @@
           <label for="password">Password</label>
           <input placeholder="Password" class="form-control" id="password" name="password" type="password" [(ngModel)]="user.password">
         </div>
+        <!--
+https://www.w3schools.com/tags/att_label_for.asp
 
+https://stackoverflow.com/questions/2725585/how-to-set-the-id-of-a-label-html-element
+
+https://blog.kevinchisholm.com/angular/detect-text-input-change-event/
+      -->
         <div class="form-group">
           <label>Dietary Preferences:</label>
           <div *ngFor="let pref of dietPreferences; let i = index;">
