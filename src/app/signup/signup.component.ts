@@ -28,7 +28,14 @@ export class SignupComponent implements OnInit {
   }
 
   signup(credentials) {
+
     credentials.dietPreferences = this.getSelectedPreferences();
+
+    // https://stackoverflow.com/questions/41336663/console-logresult-returns-object-object-how-do-i-get-result-name
+
+    // console.log(JSON.stringify(credentials.dietPreferences));
+    // console.log("33434#" + JSON.stringify(credentials));
+
     this.authService.signup(credentials).subscribe(res => {
       console.log('res ', res);
       // Redirect to user dashboard
