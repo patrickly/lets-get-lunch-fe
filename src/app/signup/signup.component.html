@@ -26,6 +26,8 @@ https://blog.kevinchisholm.com/angular/detect-text-input-change-event/
           </div>
         </div>
 
+        <div class="error alert alert-danger" *ngIf="errorMessage">{{errorMessage}}</div>
+
         <div class="form-group">
           <button class="btn btn-default" type="submit">Submit</button>
         </div>
